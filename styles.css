@@ -1,0 +1,132 @@
+html {
+  font-size: 25px;
+}
+
+:root {
+  --main-bg: rgba(23, 68, 30, 0.75);
+  --font-mono: monospace;
+  --font-sans: sans-serif;
+  --shadow-standard: 0.3em 0px 0.6em 0px rgba(0, 0, 0, 0.3);
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: rgb(66, 146, 75);
+  background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fas2.ftcdn.net%2Fv2%2Fjpg%2F01%2F21%2F16%2F19%2F1000_F_121161959_qH91mDvN3HwsVVgZBbIBIFsXLANDbI4I.jpg&f=1&nofb=1&ipt=84aa857c8ee52c2194210499caa3dae00d4b4740af67c57995b3ef8e7e88775d");
+  background-repeat: repeat;
+  background-blend-mode: darken;
+  min-height: 100vh;
+  margin: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5em;
+  padding-bottom: 2.5em;
+}
+
+.introductorySlab {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  padding: 1em;
+  box-sizing: border-box;
+
+  background-color: var(--main-bg);
+  color: white;
+  border-bottom-left-radius: 1.5em;
+  border-bottom-right-radius: 1.5em;
+  box-shadow: var(--shadow-standard);
+  backdrop-filter: blur(10px);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--font-mono);
+}
+
+#title {
+  margin: 0;
+  font-size: 2em;
+}
+
+#subtitle {
+  margin: 0.5em 0 0 0;
+  font-size: 1.1em;
+  font-weight: normal;
+}
+
+.links {
+  position: fixed;
+  left: 2em;
+  top: 8.75em;
+  z-index: 10;
+  width: 9.375em;
+  margin: 0;
+
+  background-color: var(--main-bg);
+  border-radius: 1.5em;
+  box-shadow: var(--shadow-standard);
+  backdrop-filter: blur(10px);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--font-mono);
+}
+
+#linkText {
+  width: 100%;
+  text-align: center;
+  padding: 1em 0 0 0;
+  margin: 0;
+  font-size: 1.1em;
+}
+
+.logo {
+  height: 5em;
+  width: auto;
+  padding: 0.625em;
+}
+
+
+.brick {
+  background-color: var(--main-bg);
+  border-radius: 1.5em;
+  width: 38em;
+  max-width: calc(100vw - 16em);
+  max-height: 55vh;
+  overflow-y: auto;
+  
+  margin-left: 10em; 
+  padding: 1.5em;
+  box-sizing: border-box;
+
+  box-shadow: var(--shadow-standard);
+  backdrop-filter: blur(10px);
+  font-family: var(--font-mono);
+  color: white;
+}
+
+.text {
+  color: white;
+  margin: 0;
+}
+
+.brick h2.text {
+  font-size: 1.5em;
+  margin-bottom: 1em;
+}
+
+.bullet {
+  font-size: 1em;
+  line-height: 1.6;
+}
+
+.details {
+  font-size: 0.85em;
+  opacity: 0.9;
+}
